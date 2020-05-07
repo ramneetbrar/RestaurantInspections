@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="1dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_numNonCritIssues"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="60dp"
+        app:srcCompat="@drawable/normal" />
+
+    <TextView
+        android:id="@+id/item_txtCriticalIssues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_inspectionDate"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/item_icon"
+        android:layout_toRightOf="@+id/item_icon"
+        android:text="@string/insItemView_critical_issues"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/item_txtNonCriticalIssues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_txtCriticalIssues"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/item_icon"
+        android:layout_toRightOf="@+id/item_txtCriticalIssues"
+        android:text="@string/insItemView_non_critical_issues"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/item_numCritIssues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_txtCriticalIssues"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/item_txtCriticalIssues"
+        android:text="@string/insItemView_displayCrit"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_numNonCritIssues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_txtNonCriticalIssues"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/item_txtNonCriticalIssues"
+        android:text="@string/insItemView_displayNonCrit"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/item_inspectionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/item_icon"
+        android:text="@string/insItemView_inspectiondate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</RelativeLayout>
